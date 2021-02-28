@@ -1,0 +1,23 @@
+section {
+    border: 5px solid black;
+    margin-top: 20px;
+}
+
+#dice-sum-section {
+    height: 150px;
+    position: relative;
+}
+
+#dice-para{
+    position: absolute;
+    top: 30px;
+}
+
+label {
+    position: absolute;
+    bottom: 1px;
+}
+#sum-para {
+    position:absolute;
+    bottom: 1px;
+}

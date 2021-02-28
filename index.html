@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='./style.css'/>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <!-- As a user I can select how many dice I want to roll
+    As a user, I can click a button to roll that many dice
+    As a user, I can view the dice roll as well as its sum
+    As a user, I can view the history of all of my previous rolls and their sums    -->
+
+    <!-- Your history items should be li elements.
+    Clicking the roll button the first time should not add anything to the history
+    Subsequent clicks to the rolls button should add the previous roll to the history
+    The only li elements should be your history dice rolls
+    You should have exactly one input element where the number of dice can be entered
+    You should have exactly one button element that the user can click on to roll the dice
+    The die result from rolling should be stored in an element with the id "dice-para"
+    The sum from rolling should be stored in an element with the id "sum-para"
+    Use the follow HTML entity values for dice: -->
+
+    <h1>Dice Roller</h1>
+    <form id='dice-form'>
+        Number of dice: <input id='number-of-dice' type="number">
+        <br>
+        <button type='submit'>Roll the dice!</button>
+    </form>
+
+    <section id='dice-sum-section'>
+        <p id='dice-para'></p>
+        <p name='sum' id='sum-para'>Sum = </p>
+    </section>
+    <section id='history-section'>
+        <h1>History</h1>
+        <ul></ul>
+    </section>
+</body>
+</html>
